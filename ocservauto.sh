@@ -281,8 +281,7 @@ function check_Required(){
     insserv -s  > /dev/null 2>&1 || ln -s /usr/lib/insserv/insserv /sbin/insserv
     print_info "基础工具安装成功"
 #only Debian 7+
- #   surport_Syscodename || die "对不起，不支持你的系统"
-  #  print_info "系统正常支持"
+ 
 #check systemd
     ocserv_systemd="n"
     pgrep systemd-journal > /dev/null 2>&1 && ocserv_systemd="y"
